@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,1) 0%);
+}
+
+  *{
+      box-sizing: border-box;
+      margin: 0
+   }
+
+  .menu-page{
+      min-height:100vh;
+      padding: 15px;
+      background-color: #000000;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: left;
+      justify-content: left;
+  }
+
+  .menu-page .left-box{
+      /* later add image for backgroun */
+      background: rgb(32,94,111);
+      background: linear-gradient(90deg, rgba(32,94,111,1) 0%, rgba(0,0,0,1) 100%);
+      background-size: cover;
+      background-position: center;
+      background-repeat: repeat-x;
+      border-radius: 25px;
+      position: left;
+      flex: 0 0 700px;
+      max-width: 200px;
+      min-height: 700px;
+      box-shadow: 0 0 10px #dddddd;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1;
+  }
+  .menu-page .left-box .left-btn{
+    height:50px;
+    width:188px;
+    margin-top: 30px;
+    margin-left: 5px;;
+    color: #ffffff;
+    border:1px solid #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: white;
+    padding: 7.5px 20px;
+    color:black;
+  }
+
+
+  .menu-page .left-box .left-btn:hover{
+    background: rgb(255, 255, 255);
+    transition: 1s ease;
+    box-shadow: 1px 0px 10px 7px #ffffff;
+}
+
+
+.menu-page .left-box .left-btn:focus{
+    outline: none;
+}
+
+#nav{
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: 100;
+    width: 250px; /* Width of navigation frame */
+    height: 100%;
+    overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
+    background: transparent;
+    margin-top: 150px;
+    margin-left: -40px;
+    text-decoration: none;
+}
+
+.menu-page .left-box .innertube ul li:hover{
+    background: rgb(255, 255, 255);
+    transition: 1s ease;
+    box-shadow: 1px 0px 10px 7px #ffffff;
+}
+
+
+.menu-page .left-box .innertube ul li:hover:focus{
+    outline: none;
+}
+
+
+.innertube{
+    margin: 15px; /* Provides padding for the content */
+}
+
+p {
+    color: #555;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+nav ul a {
+    
+
+}
+nav ul li {
+    height:50px;
+    width:188px;
+    margin-top: 30px;
+    margin-left: 30px;;
+    color: #ffffff;
+    border:1px solid #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: white;
+    padding: 7.5px 50px;
+    color:black;
+    height: 0%;
+}
+        
