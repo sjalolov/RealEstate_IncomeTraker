@@ -1,43 +1,43 @@
 import React from 'react';
-import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import * as IoIcons from 'react-icons/io';
+import { RiBuilding2Fill, RiStoreFill, RiBarChart2Fill } from "react-icons/ri";
+import { GiAngryEyes,GiBackup } from "react-icons/gi";
 
 export const SidebarData = [
   {
-    title: 'Home',
+    title: 'Dashboard',
     path: '/',
     icon: <AiIcons.AiFillHome />,
     cName: 'nav-text'
   },
   {
-    title: 'Reports',
-    path: '/reports',
-    icon: <IoIcons.IoIosPaper />,
+    title: 'Hauses',
+    path: '/hauses',
+    icon: <RiBuilding2Fill />,
     cName: 'nav-text'
   },
   {
-    title: 'Products',
-    path: '/products',
-    icon: <FaIcons.FaCartPlus />,
+    title: 'Stores',
+    path: '/stores',
+    icon: <RiStoreFill />,
     cName: 'nav-text'
   },
   {
-    title: 'Team',
-    path: '/team',
-    icon: <IoIcons.IoMdPeople />,
+    title: 'Transactions',
+    path: '/transactions',
+    icon: <RiBarChart2Fill />,
     cName: 'nav-text'
   },
   {
-    title: 'Messages',
-    path: '/messages',
-    icon: <FaIcons.FaEnvelopeOpenText />,
+    title: 'Custmers',
+    path: '/custmers',
+    icon: <GiAngryEyes />,
     cName: 'nav-text'
   },
   {
-    title: 'Support',
-    path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />,
+    title: 'Users',
+    path: '/users',
+    icon: <GiBackup/>,
     cName: 'nav-text'
   }
 ];

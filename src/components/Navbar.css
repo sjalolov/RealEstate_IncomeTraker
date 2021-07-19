@@ -54,7 +54,7 @@
   
   .nav-text a:hover {
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,91,79,1) 0%, rgba(0,203,173,1) 100%);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,91,79,1) 0%, rgba(0,203,173,1) 100%);
   }
   
   .nav-menu-items {
