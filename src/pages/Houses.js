@@ -3,7 +3,7 @@ import './Products.css'
 
 
 
-function Hauses() {
+function Houses() {
   return (
       <div class="CategorySection4">
         <ul>
@@ -50,4 +50,4 @@ function Hauses() {
   );
 }
 
-export default Hauses;
+export default Houses;

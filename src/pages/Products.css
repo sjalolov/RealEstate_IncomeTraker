@@ -50,6 +50,7 @@
 .CategorySection4 img {
     width: 100%;
     border-radius: 12px;
+    transition: all 0.5s ease-out;
 }
 
 .CategorySection4 img:hover{

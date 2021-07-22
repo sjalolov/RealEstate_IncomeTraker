@@ -11,8 +11,8 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Hauses',
-    path: '/hauses',
+    title: 'Houses',
+    path: '/houses',
     icon: <RiBuilding2Fill />,
     cName: 'nav-text'
   },

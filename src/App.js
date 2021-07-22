@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Hauses from './pages/Hauses';
+import Houses from './pages/Houses';
 import Stores from './pages/Stores';
 import Dashboard from './pages/Dashboard';
 import Custmers from './pages/Custmers';
@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/' exact component={Dashboard} />
-          <Route path='/hauses' component={Hauses} />
+          <Route path='/houses' component={Houses} />
           <Route path='/custmers' component={Custmers} />
           <Route path='/stores' component={Stores} />
           <Route path='/users' component={Users} />
