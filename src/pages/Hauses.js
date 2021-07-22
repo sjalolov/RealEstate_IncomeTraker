@@ -1,125 +1,53 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const cardWidth = 320;
-const borderRadius = 8;
-const transition = 'all 0.45s ease';
-
-const Screenshot = styled.figure`
-  z-index: 200;
-  position: relative;
-  margin: -2px;
-  padding: 0;
-  width: ${cardWidth}px;
-  height: 190px;
-  background: url(${(props) => props.image}) 0 0 no-repeat;
-  background-size: cover;
-  border-radius: ${borderRadius}px ${borderRadius}px ${borderRadius}px ${borderRadius}px;
-  overflow: hidden;
-  backface-visibility: hidden;
-  transition: ${transition};
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0);
-    transition: ${transition};
-  }
-`;
-
-const Content = styled.div`
-  z-index: 200;
-  position: relative;
-  padding: 20px 20px 30px;
-`;
-
-const Title = styled.span`
-  display: block;
-  margin-bottom: 4px;
-  font-size: 1.25em;
-  font-weight: 500;
-  transition: ${transition};
-`;
-
-const Description = styled.span`
-  display: block;
-  font-size: 0.875em;
-  color: #999999;
-  transition: ${transition};
-  transition-delay: 0.04s;
-`;
-
-const BottomBar = styled.span`
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 10px;
-  background: ${(props) => props.background && props.background};
-  border-radius: 0 0 ${borderRadius}px ${borderRadius}px;
-  transition: ${transition};
-`;
-
-const Style = styled.button`
-  position: relative;
-  flex-shrink: 0;
-  width: ${cardWidth}px;
-  text-align: left;
-  background: #ffffff;
-  border-radius: ${borderRadius}px;
-  cursor: pointer;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.12), 0 20px 20px -10px rgba(0, 0, 0, 0.125);
-  transition: ${transition};
-
-  &:hover {
-    transform: scale(1.04);
-
-    ${Title},
-    ${Description},
-    ${BottomBar} {
-      transform: scale(0.92);
-    }
-
-    ${Title} {
-      transform: translateY(-10px);
-    }
-
-    ${Description} {
-      transform: translateY(-12px);
-    }
-
-    ${BottomBar} {
-      border-radius: ${borderRadius - 2}px;
-      transform: translateY(-14px) scale(0.9);
-    }
-
-    ${Screenshot} {
-      transform: translateY(4px) scale(0.92);
-      border-radius: ${borderRadius - 2}px;
-
-      &::before {
-        background: rgba(0, 0, 0, 0.1);
-      }
-    }
-  }
-`;
-const Hauses = ({ hexa, title, description, image }) => (
-  
-  <Style>
-    <Screenshot image="https://i.postimg.cc/pXKZbkPc/R.jpg"/>
-    <Content>
-      <Title>Hause 1</Title>
-      <Description>It is located in Portland, Oregon</Description>
-      <BottomBar background={hexa} />
-    </Content>
-  </Style>
-  
+import './Products.css'
 
 
-);
+
+function Hauses() {
+  return (
+      <div class="CategorySection4">
+        <ul>
+         <li> 
+         <div class="cateMore">
+           <img src="https://i.postimg.cc/zXGLRGW5/high-view-builders-kerala.jpg" alt="Product" class="img-fluid"/>
+           </div>
+           <h4>The White House Dushanbe</h4>
+           <h5>8 Bedrooms, 5 Showers, 3 Restrooms, 2 Kitchen, Gest House and other sport fields.</h5>
+           <div class="rateFooter"> £200.00 </div>
+         </li>
+         <li>
+            <div class="cateMore"><img src="https://i.postimg.cc/HsfFJ3Pg/65822a6ab3abe166005afdecbf22c074.jpg" alt="Product" class="img-fluid"/></div>
+            <h4>The Blue House Kulob</h4>
+            <h5>7 Bedrooms, 4 Showers, 2 Restrooms, 3 Kitchen, Gest House and other sport fields.</h5>
+            <div class="rateFooter">£421.00 </div>
+          </li>
+          <li>
+            <div class="cateMore"><img src="https://i.postimg.cc/dtTxKrQS/sale-mansion-bangalore-ori100-V0010-BA-71445797.jpg" alt="Product" class="img-fluid"/></div>
+            <h4>Pool House Khujand</h4>
+            <h5>10 Bedrooms, 5 Showers, 4 Restrooms, 2 Kitchen, Gest House and other sport fields.</h5>
+            <div class="rateFooter">£521.00 </div>
+          </li>
+          <li>
+            <div class="cateMore"><img src="https://i.postimg.cc/hGMC00Mh/ANX-SL-HOUSE-32.jpg" alt="Product" class="img-fluid"/></div>
+            <h4>Blue Pool House</h4>
+            <h5>7 Bedrooms, 4 Showers, 2 Restrooms, 2 Kitchen, Gest House and other sport fields.</h5>
+            <div class="rateFooter">£121.00 </div>
+          </li>
+          <li>
+            <div class="cateMore"><img src="https://i.postimg.cc/m2LdzC8D/hen-houses-with-hot-tubs-1558430874-3.jpg" alt="Product" class="img-fluid"/></div>
+            <h4>Golden House</h4>
+            <h5>9 Bedrooms, 2 Showers, 3 Restrooms, 2 Kitchen, Gest House and other sport fields.</h5>
+            <div class="rateFooter">£700.00 </div>
+          </li>
+          <li>
+            <div class="cateMore"><img src="https://i.postimg.cc/kMkd8nBz/contemporary-australian-architecture-130117-1018-01-800x540.jpg" alt="Product" class="img-fluid"/></div>
+            <h4>City House Dushanbe</h4>
+            <h5>7 Bedrooms, 4 Showers, 2 Restrooms, 2 Kitchen, Gest House and other sport fields.</h5>
+            <div class="rateFooter">£721.00 </div>
+          </li>
+        </ul>
+      </div>
+  );
+}
 
 export default Hauses;
