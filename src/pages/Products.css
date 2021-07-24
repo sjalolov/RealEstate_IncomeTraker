@@ -16,7 +16,7 @@
     font-size: 22px;
   }
   
-  .card button {
+  /* .card button {
     border: none;
     outline: 0;
     padding: 12px;
@@ -30,7 +30,8 @@
   
   .card button:hover {
     opacity: 0.7;
-  }
+    
+  } */
 
   /* CategorySection4 */
   .CategorySection4 ul {
@@ -83,16 +84,16 @@
     font-size: 20px;
     margin-top: 10px;
     padding:10px;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,54,46,1) 0%, rgba(0,255,217,1) 91%);
+    background: rgb(131,58,180);
+ background: linear-gradient(247deg, rgba(131,58,180,1) 0%, rgba(29,184,253,1) 52%, rgba(252,176,69,1) 100%);
     border-radius: 12px;
 }
 .CategorySection4 .rateFooter:hover {
   transition: 3s ease-in-out;
   cursor: pointer;
   color: #000;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,91,79,1) 0%, rgba(0,255,217,1) 91%);
+  background: rgb(131,58,180);
+ background: linear-gradient(247deg, rgba(131,58,180,1) 0%, rgba(29,184,253,1) 52%, rgba(252,176,69,1) 100%);
 
 }
 .CategorySection4 .lowPrice {
@@ -105,3 +106,119 @@
     font-size: 20px;
     font-weight: 700;
 }
+
+/* .CategorySection4 p button{
+  background: rgb(131,58,180);
+ background: linear-gradient(247deg, rgba(131,58,180,1) 0%, rgba(29,184,253,1) 52%, rgba(252,176,69,1) 100%);
+  border-radius: 12px;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  margin: 0.5em 1em;
+  padding: 1em 1em;
+}
+
+.CategorySection4 p button:hover{
+  transition: 3s ease-in-out;
+  cursor: pointer;
+  color: #000;
+  background: rgb(131,58,180);
+ background: linear-gradient(247deg, rgba(131,58,180,1) 0%, rgba(29,184,253,1) 52%, rgba(252,176,69,1) 100%);
+} */
+
+
+.GridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 20fr));
+  margin-right: 20%;;
+  padding: 5rem;
+  place-items: center;
+  column-gap: 4rem;
+  row-gap: 3rem;
+}
+
+.BlogCard{
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px white;
+  text-align: center;
+  width: 350%;
+  transition: 0.5s ease;
+}
+
+.BlogCard:hover{
+   cursor: pointer;
+}
+
+
+@media(max-width: 974px){
+  .GridContainer {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 20fr));
+    margin-right: 30%;;
+    transition: 0.5s ease;
+    padding: 5rem;
+    place-items: center;
+    column-gap: 4rem;
+    row-gap: 3rem;
+  }
+}
+
+@media(max-width: 800px){
+  .GridContainer {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 20fr));
+    margin-right: 35%;;
+    transition: 0.5s ease;
+    padding: 5rem;
+    place-items: center;
+    column-gap: 4rem;
+    row-gap: 3rem;
+  }
+
+  .BlogCard{
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px white;
+    text-align: center;
+    width: 500%;
+    transition: 0.5s ease;
+  }
+
+}
+
+@media(max-width: 337px){
+  .GridContainer {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 20fr));
+    margin-right: 40%;;
+    transition: 0.5s ease;
+    padding: 5rem;
+    place-items: center;
+    column-gap: 4rem;
+    row-gap: 3rem;
+  }
+
+}
+
+
+
+
+ 
+ .CategorySection4 p button {background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%)}
+ .CategorySection4 p button  {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .CategorySection4 p button :hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
