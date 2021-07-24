@@ -6,6 +6,7 @@ function Dashboard() {
     <div className='dashboard'>
       <h1>Dashboard</h1>
     </div>
+    
   );
 }
 
